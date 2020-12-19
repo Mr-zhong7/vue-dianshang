@@ -261,7 +261,7 @@
         } = await this.$http.get('users', {
           params: this.queryInfo
         })
-        console.log(res);
+        // console.log(res);
         if (res.meta.status !== 200) {
           return this.$message.error('获取用户列表失败')
         }

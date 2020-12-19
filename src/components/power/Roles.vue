@@ -179,7 +179,7 @@
           return this.$message.error('获取角色列表失败')
         }
         this.roleslsit = res.data
-        console.log(this.roleslsit);
+        // console.log(this.roleslsit);
 
       },
       //添加角色
@@ -212,7 +212,7 @@
           data: res
         } = await this.$http.get('roles/' + id)
 
-        console.log(res);
+        // console.log(res);
         if (res.meta.status !== 200) {
           return this.$message.error("获取角色数据失败")
         }
